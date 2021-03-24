@@ -9,7 +9,7 @@
     "check": "tsc"
   },
   "author": "",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "alias": {
     "react": "preact/compat",
     "react-dom/test-utils": "preact/test-utils",
