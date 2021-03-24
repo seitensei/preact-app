@@ -1,13 +1,25 @@
 module.exports = {
     extends: [
+        'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:react/recommended',
         'prettier',
         'prettier/@typescript-eslint',
+        'prettier/react',
         'preact'
     ],
     parser: '@typescript-eslint/parser',
-    plugins: ['@typescript-eslint', 'prettier'],
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true
+        }
+    },
+    plugins: [
+        '@typescript-eslint',
+        'prettier',
+        'react'
+    ],
     rules: {
         'prettier/prettier': 'error',
         'prefer-const': 'error',
