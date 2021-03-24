@@ -1,0 +1,16 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        ["@babel/preset-typescript", {
+            "jsxPragma": "h"
+        }]
+    ],
+    "plugins": [
+        ["@babel/plugin-transform-react-jsx", {
+            "pragma": "h",
+            "pragmaFrag": "Fragment"
+        }],
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread"
+    ]
+}
